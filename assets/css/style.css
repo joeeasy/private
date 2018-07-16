@@ -1,0 +1,758 @@
+/* 
+HAUZ RENT FRONT-END DESIGN BY JOEEASY!
+********
+===========================================
+RESET BOOTSTRAP STYLING BASE ON SPECIFICITY
+===========================================
+********
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: BryantBoldAlt;
+  outline: none;
+}
+
+body {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+/* 
+============
+NAVBAR RESET
+============ 
+*/
+
+.navbar-inverse {
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.navbar-header,
+.navbar-inverse .navbar-nav>li {
+  font-family: BryantBoldAlt;
+  padding: 3.5rem 2rem;
+}
+
+/* .navbar-header, */
+
+nav.navbar.navbar-inverse .navbar-nav>li>a {
+  padding: 0;
+  font-size: 1.8rem;
+  color: #F2F2F2;
+}
+
+.navbar-header {
+  height: 9rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-header>a.navbar-brand {
+  font-size: 2.8rem;
+  color: #F2F2F2;
+}
+
+/*  */
+
+.navbar-inverse .navbar-nav>li:last-child {
+  padding-top: 2.5rem;
+}
+
+/* 
+=================
+CONTAINERS RESETS
+=================
+*/
+
+.container-fluid {
+  padding-right: 9rem;
+  padding-left: 9rem;
+}
+
+/*  COLORS */
+
+.text--primary {
+  color: #6b459e;
+}
+
+.text--secondary {
+  color: #357DC5;
+}
+
+.text--color--grey {
+  color: #828282;
+}
+
+.text--color--white {
+  color: #ffffff;
+}
+
+.bg--color--grey {
+  background-color: #9B9B9B
+}
+
+.bg--color--white {
+  background-color: #ffffff;
+}
+
+.gradient {
+  background-image: linear-gradient(to bottom, #401779 0%, #357DC5 100%);
+}
+
+/* SPACING(PADDING, MARGIN AND OTHERS */
+
+/* PADDING SECTION */
+
+.p--0 {
+  padding: 0;
+}
+
+.p--right__0 {
+  padding-right: 0;
+}
+
+.p--right__8 {
+  padding-right: .8rem;
+}
+
+.p--left__0 {
+  padding-left: 0;
+}
+
+.p--left__right-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.p--left__16 {
+  padding-left: 1.6rem;
+}
+
+.p--left__right-16 {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+/* MARGIN SECTION */
+
+.margin--0 {
+  margin: 0;
+}
+
+.margin--top__3 {
+  margin-top: 3rem;
+}
+
+.margin--bottom__3 {
+  margin-bottom: 3rem;
+}
+
+.margin--left__40 {
+  margin-left: 4rem;
+}
+
+/* border and hr */
+
+.no--border,
+input.form--control {
+  border: none;
+}
+
+/* FONTS DECLARATION */
+
+.font--18 {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+}
+
+/* 
+*********
+++++++++++++++++++++++++++++++++
+BOOTSTRAP REFRACTORING ENDS HERE
+--------------------------------
+*********
+ */
+
+/* 
+ ************************************
+ IMPORT USER DEFINED FONTS
+ ************************************
+*/
+
+/* BRYANT BOLD */
+
+@font-face {
+  font-family: BryantBoldAlt;
+  src: url("../fonts/BryantBoldAlt.ttf");
+}
+
+/* BRYANT LIGHT */
+
+@font-face {
+  font-family: BryantLight;
+  src: url("../fonts/BryantLight.ttf");
+}
+
+/* BRYANT LIGHT ALT */
+
+@font-face {
+  font-family: BryantLightAlt;
+  src: url("../fonts/BryantLightAlt.ttf");
+}
+
+/* BRYANT MEDIUM  */
+
+@font-face {
+  font-family: BryantMedium;
+  src: url("../fonts/BryantMedium.ttf");
+}
+
+/* BRYANT MEDIUM ALT */
+
+@font-face {
+  font-family: BryantMediumAlt;
+  src: url("../fonts/BryantMediumAlt.ttf");
+}
+
+/* BRYANT REGULAR */
+
+@font-face {
+  font-family: BryantRegular;
+  src: url("../fonts/BryantRegular.ttf");
+}
+
+/* BRYANT REGULAR ALT */
+
+@font-face {
+  font-family: BryantRegularAlt;
+  src: url("../fonts/BryantRegularAlt.ttf");
+}
+
+/* 
+ ---------------------------------------------------
+ */
+
+/* 
+ ++++++++++++++++++++++++
+CSS STARTS HERE
+ +++++++++++++++++++++++++
+*/
+
+.btn {
+  padding: 1rem 1.6rem !important;
+  -webkit-box-shadow: 0px 2px 35px 8px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 35px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 35px 8px rgba(0, 0, 0, 0.25);
+}
+
+.btn--round {
+  border-radius: 50px;
+}
+
+.btn--secondary {
+  background: #9B9B9B;
+  color: #ffffff;
+}
+
+.btn--50px {
+  height: 50px;
+  font-size: 1.8rem;
+}
+
+/* HEADER STYLING*/
+
+.header1 {
+  /* padding: 6rem; */
+  background-image: url('../img/Group\ 5.png'), linear-gradient(to bottom, #401779 0%, #357DC5 100%);
+  background-position: right 0 top 0;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.header2 {
+  /* padding: 6rem; */
+  background-image: url('../img/Group\ 5.png'), linear-gradient(to left, #551F84 0%, rgba(53, 125, 197, 0.91) 99%, #357DC5 100%);
+  background-position: right 0 top 0;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.header {
+  padding: 15rem 0;
+}
+
+.header__title,
+.header__content {
+  font-family: BryantBoldAlt;
+  color: #ffffff;
+  padding: 0 1.6rem
+}
+
+.header__title {
+  font-size: 6rem;
+  line-height: 6.2rem;
+}
+
+.header__content {
+  font-size: 3rem;
+  line-height: 3.1rem;
+  margin: 1.6rem 0 2.4rem 0;
+}
+
+.header__footer {
+  display: none
+}
+
+.appstore {
+  padding: 1.7rem 0;
+}
+
+/* why us section */
+
+.why {
+  padding: 12rem 7rem 0 7rem;
+}
+
+.why__title,
+.how__title {
+  font-family: BryantBoldAlt;
+  font-style: regular;
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+}
+
+.why__content {
+  padding: 8.5rem 7rem 0 7rem;
+}
+
+.thumbnail {
+  margin-bottom: 8rem;
+}
+
+.caption__title {
+  font-family: BryantBoldAlt;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  margin: 2.4rem 0 1.6rem 0;
+}
+
+.caption__text {
+  font-family: BryantMedium;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  width: 29.6rem;
+  margin: 0 auto;
+  color: #9B9B9B;
+}
+
+/* how it work */
+
+.how-it-works {
+  padding: 10rem 0;
+  background-color: rgba(235, 216, 235, 0.3);
+}
+
+.how__headline {
+  font-family: BryantBoldAlt;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #9B9B9B;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.how__content {
+  display: flex;
+  width: 880px;
+}
+
+.card__header,
+.swipe__card,
+.card {
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(196, 196, 196, 0.5);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(196, 196, 196, 0.5);
+  box-shadow: 0px 4px 20px 0px rgba(196, 196, 196, 0.5);
+}
+
+.card {
+  width: 26.4rem;
+  background-color: #ffffff;
+}
+
+.card__header {
+  height: 13.2rem;
+  background-color: #357DC5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  /* margin-bottom: 3.2rem; */
+}
+
+.card__content {
+  padding: 1.9rem;
+  /* background-color: #ffffff; */
+}
+
+.card--content__title {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  padding-bottom: 1.6rem;
+  text-align: center;
+}
+
+.card--content__body {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #9B9B9B;
+  padding-bottom: 4.2rem;
+}
+
+.info {
+  padding: 8.5rem 0;
+  text-align: center;
+}
+
+.info__title {
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  color: #ffffff;
+}
+
+.info__content {
+  font-size: 2.4rem;
+  line-height: 3.9rem;
+  margin: 3.2rem 0;
+  color: #ffffff;
+}
+
+.highlights {
+  padding: 10.10rem 0;
+  background-color: rgba(235, 216, 235, 0.3);
+}
+
+.highlight {
+  padding: 10.5rem 0;
+}
+
+.highlights>.highlight:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.highlight__title,
+.testimony__title,
+.partners__title {
+  font-size: 4.5rem;
+}
+
+.highlight__title {
+  line-height: 4.6rem;
+  margin-bottom: 1.8rem;
+}
+
+.highlight__content,
+.testimony__content {
+  font-size: 2.3rem;
+}
+
+.highlight__content {
+  font-family: BryantMedium;
+  line-height: 2.5rem;
+  color: #9B9B9B;
+}
+
+.testimony__title {
+  line-height: 3.8rem;
+  text-align: center;
+  padding-bottom: 6rem;
+}
+
+/* .testimony__content {} */
+
+.user--pic {
+  height: 100px;
+  /* border-radius: 50px; */
+  border: 3px solid#551F84;
+  border-radius: 50%;
+}
+
+.swipe__card {
+  padding: 2.4rem;
+  border-radius: 0.2rem;
+  background-color: #ffffff;
+}
+
+.swipe__card__title {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-transform: capitalize;
+  padding: 2.7rem 0 0.8rem 0;
+}
+
+.swipe__card__headline {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.swipe__card__content {
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  margin-top: 3.2rem;
+  /* border-color: */
+  font-family: BryantMediumAlt;
+}
+
+/* .swiper-slide-next,
+.swiper-slide-prev {
+  display: none
+}
+
+.swiper-slide-active {
+  display: block;
+} */
+
+.s-swiper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__controls {
+  padding-top: 1.6rem;
+}
+
+.partners {
+  padding: 9.4rem 0 0 0;
+}
+
+.partners__content {
+  padding: 0 3rem;
+  font-size: 2.2rem;
+  font-family: BryantMediumAlt;
+}
+
+.partners__logo {
+  margin-top: 2.4rem;
+}
+
+.contact {
+  padding: 6rem 0;
+  height: 82rem;
+}
+
+.contact__form {
+  padding: 0 18.8rem;
+}
+
+.contact__headline,
+.contact__title {
+  text-align: center;
+}
+
+.contact__headline {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.contact__title {
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  padding: 1.6rem 0 5rem 0;
+}
+
+.input--group {
+  height: 5rem;
+  background-color: #ffffff;
+  /* padding: 1.4rem 0; */
+  border-radius: 0.3rem;
+}
+
+.form--control,
+textarea.form-control {
+  color: rgba(64, 18, 117, 0.5);
+  outline: none;
+  padding: 1.4rem 0 1.4rem 3.8rem;
+}
+
+.form--control {
+  font-size: 1.4rem;
+  height: 5rem;
+  width: 100%;
+  line-height: 1.6rem;
+  border-radius: 0%;
+  background: transparent;
+  z-index: 10;
+}
+
+.form--control::placeholder,
+textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(64, 18, 117, 0.5);
+  /* opacity: 1; */
+  /* Firefox */
+}
+
+.form--control::placeholder,
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(64, 18, 117, 0.5);
+}
+
+.form--control::placeholder,
+textarea::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(64, 18, 117, 0.5);
+}
+
+input {
+  background: url('../img/account.png') no-repeat scroll 7px 7px;
+}
+
+.text__area {
+  margin: 1.6rem 0 2.4rem 0;
+}
+
+textarea.form-control {
+  height: 14.2rem
+}
+
+.footer {
+  margin-top: 10rem;
+}
+
+.list-style-none {
+  list-style: none;
+  padding-left: 0;
+}
+
+.f-20 {
+  font-size: 2.2rem;
+}
+
+.links>ul>li>a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 1.9rem;
+  color: #BDBDBD;
+  padding-bottom: 1.6rem;
+}
+
+.links>ul>li {
+  margin-bottom: 1.6rem;
+}
+
+.faq__header__content {
+  font-size: 1.8rem;
+  color: #E0E0E0;
+}
+
+.faq {
+  padding: 0;
+  margin-bottom: 3.2rem;
+}
+
+.faq__title {
+  font-size: 3.4rem;
+  margin-bottom: 1.6rem;
+  line-height: 2.8rem;
+}
+
+.faq__content {
+  font-size: 2.4rem;
+  color: #808080;
+}
+
+.highlight__white {
+  background-color: #ffffff;
+}
+
+.faq__list {
+  list-style-type: decimal;
+  color: #808080;
+}
+
+.faq__list li {
+  font-family: BryantMedium;
+}
+
+.button {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  color: white;
+  /* font-size: 1.2em; */
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+.button span {
+  position: relative;
+  pointer-events: none;
+}
+
+.button::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #357DC5, transparent);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: width .2s ease, height .2s ease;
+}
+
+.button:hover::before {
+  --size: 400px;
+}
+
+.button.focus,
+.button:focus,
+.button:hover {
+  color: #fff;
+  background-color: #401779;
+  border-color: #401779;
+}
+
+.bounce {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}

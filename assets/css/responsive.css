@@ -1,0 +1,125 @@
+@media(max-width: 1024px) {
+  .navbar-inverse .navbar-collapse,
+  .navbar-inverse .navbar-form {
+    padding: 0;
+  }
+  .container-fluid {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .playstore>a>img {
+    height: 60px;
+  }
+  .appstore {
+    padding: 1.0rem 0;
+  }
+  .appstore>a>img {
+    height: 4rem;
+  }
+  .hightlight__img {
+    height: 30rem;
+  }
+  .user--pic {
+    height: 80px;
+  }
+}
+
+@media(max-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-header,
+  .navbar-inverse .navbar-nav>li {
+    padding: 3.5rem 1rem
+  }
+  .mobile>img {
+    height: 50rem;
+  }
+  .card {
+    width: 23.5rem;
+    margin-bottom: 2rem;
+    margin: 0;
+    margin-right: 10px;
+  }
+  .why {
+    padding: 12rem 0 0 0;
+  }
+  .why__content {
+    padding: 0;
+  }
+  .caption__text {
+    width: 100%;
+  }
+  .header__title {
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+  .header__content {
+    font-size: 2rem;
+    line-height: 3.1rem;
+    margin: 1.6rem 0 2.4rem 0;
+  }
+  .highlight {
+    padding: 5rem 0
+  }
+  .hightlight__img {
+    height: 28rem;
+  }
+  .contact {
+    height: auto;
+  }
+  .contact__form {
+    padding: 0;
+  }
+  .thumbnail.no--border {
+    height: 33.6rem;
+  }
+  .highlight__title,
+  .testimony__title,
+  .partners__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media(max-width: 425px) {
+  .m--display {
+    display: none;
+  }
+  .m--center {
+    text-align: center;
+  }
+  .how__content {
+    /* width: 100%; */
+    width: 100%;
+    flex-direction: column;
+  }
+  .card {
+    width: 25.5rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .testimony__slider__item>.row>.col-md-6:nth-child(even) {
+    display: none;
+  }
+  .input--group {
+    height: auto;
+    background: transparent;
+  }
+  .input--group>.row>.col-md-4 {
+    padding: 10px 20px;
+  }
+  input.form-control {
+    background-color: #ffff;
+  }
+  .thumbnail.no--border {
+    height: 30rem;
+  }
+  .thumbnail {
+    margin-bottom: 0;
+  }
+}
